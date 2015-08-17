@@ -1,0 +1,7 @@
+*.~*
+*.dsk
+*.local
+*.identcache
+Win32/Debug/
+ATOMScannerConsole/MAINICON.res
+ATOMScannerConsole/VERSIONINFO.res

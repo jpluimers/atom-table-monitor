@@ -1,0 +1,32 @@
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+
+1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEOS 0x4
+FILETYPE 0x1
+{
+BLOCK "StringFileInfo"
+{
+	BLOCK "041304E4"
+	{
+		VALUE "CompanyName", "wiert.me"
+		VALUE "FileDescription", "ATOMSCannerConsole"
+		VALUE "FileVersion", "1.0.0.0"
+		VALUE "InternalName", "ATOMSCannerConsole"
+		VALUE "LegalCopyright", "Jeroen Wiert Pluimers"
+		VALUE "LegalTrademarks", "ATOMSCannerConsole"
+		VALUE "OriginalFilename", "ATOMSCannerConsole"
+		VALUE "ProductName", "ATOMSCannerConsole"
+		VALUE "ProductVersion", "1.0.0.0"
+		VALUE "Comments", "ATOMSCannerConsole"
+	}
+}
+
+BLOCK "VarFileInfo"
+{
+	VALUE "Translation", 0x0413 0x04E4
+}
+}
+
+

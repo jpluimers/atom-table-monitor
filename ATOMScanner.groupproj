@@ -1,0 +1,44 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{191ba8a5-c4db-4bfa-83ce-b82086a7e71f}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="ATOMScannerConsole\ATOMScannerConsole.dproj" />
+    <Projects Include="ATOMService\ATOMScannerService.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ATOMScannerConsole">
+    <MSBuild Projects="ATOMScannerConsole\ATOMScannerConsole.dproj" Targets="" />
+  </Target>
+  <Target Name="ATOMScannerConsole:Clean">
+    <MSBuild Projects="ATOMScannerConsole\ATOMScannerConsole.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ATOMScannerConsole:Make">
+    <MSBuild Projects="ATOMScannerConsole\ATOMScannerConsole.dproj" Targets="Make" />
+  </Target>
+  <Target Name="ATOMScannerService">
+    <MSBuild Projects="ATOMService\ATOMScannerService.dproj" Targets="" />
+  </Target>
+  <Target Name="ATOMScannerService:Clean">
+    <MSBuild Projects="ATOMService\ATOMScannerService.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ATOMScannerService:Make">
+    <MSBuild Projects="ATOMService\ATOMScannerService.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ATOMScannerConsole;ATOMScannerService" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="ATOMScannerConsole:Clean;ATOMScannerService:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="ATOMScannerConsole:Make;ATOMScannerService:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

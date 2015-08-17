@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1fa370a4-f8c5-4a9a-8000-7768d1eb4a56}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>bin\Win32\Debug\ATOMScannerConsole.exe</DCC_DependencyCheckOutputName>
+    <MainSource>ATOMScannerConsole.dpr</MainSource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+    <DCC_ExeOutput>bin\Win32\Release</DCC_ExeOutput>
+    <DCC_DcuOutput>lib\Win32\Release</DCC_DcuOutput>
+    <DCC_ObjOutput>lib\Win32\Release</DCC_ObjOutput>
+    <DCC_HppOutput>lib\Win32\Release</DCC_HppOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_ExeOutput>bin\Win32\Debug</DCC_ExeOutput>
+    <DCC_DcuOutput>lib\Win32\Debug</DCC_DcuOutput>
+    <DCC_ObjOutput>lib\Win32\Debug</DCC_ObjOutput>
+    <DCC_HppOutput>lib\Win32\Debug</DCC_HppOutput>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters><Parameters Name="RunParams">show removespecial</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1043</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">wiert.me</VersionInfoKeys><VersionInfoKeys Name="FileDescription">ATOMSCannerConsole</VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName">ATOMSCannerConsole</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Jeroen Wiert Pluimers</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks">ATOMSCannerConsole</VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">ATOMSCannerConsole</VersionInfoKeys><VersionInfoKeys Name="ProductName">ATOMSCannerConsole</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments">ATOMSCannerConsole</VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">ATOMScannerConsole.dpr</Source></Source><Excluded_Packages>
+      <Excluded_Packages Name="C:\TFS\Topline\Development\PSLTopline9\Delphi\BPL\nexusdb208dv100.bpl">NexusDB 2.08 - default sub-engines - runtime - RTL100</Excluded_Packages>
+    </Excluded_Packages></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="ATOMScannerConsole.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <RcCompile Include="MAINICON.rc">
+      <ModuleName>MAINICON.rc</ModuleName>
+      <Form>MAINICON.res</Form>
+    </RcCompile>
+    <RcCompile Include="VERSIONINFO.rc">
+      <ModuleName>VERSIONINFO.rc</ModuleName>
+      <Form>VERSIONINFO.res</Form>
+    </RcCompile>
+    <DCCReference Include="ATOMScannerConsoleApplicationUnit.pas" />
+  </ItemGroup>
+</Project>
